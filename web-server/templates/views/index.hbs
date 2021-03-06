@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Weather</title>
+    <link rel="icon" href="/img/weather.png">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}} 
+        {{!-- // to inject the file in the hbs we use the 2 braces --}}
+
+        <p>Use this site to get your current weather !</p>
+
+        <form>
+            <input placeholder="Location">
+            <button>Search</button>
+        </form>
+
+        <p id="message-1"></p>
+        <p id="message-2"></p>
+    </div>
+
+    {{>footer}}
+
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
+
+    {{!-- Handlebars is a simple templating language.
+It uses a template and an input object to generate HTML or other text formats. Handlebars templates look like regular text with embedded Handlebars expressions.
+A handlebars expression is a {{, some contents, followed by a }}. When the template is executed, these expressions are replaced with values from an input object. --}}
